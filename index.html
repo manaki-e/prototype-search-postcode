@@ -2,10 +2,10 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>郵便番号検索</title>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -14,27 +14,24 @@
   <div class="wrapper">
     <h1>郵便番号から住所を検索する</h1>
     <ul class="contain">
-      <li class="postcode">
-        郵便番号<br>
-        <form name="form" onsubmit="number()">
-          <input type="text" name="postcode" placeholder="例）4101118">
-          <input type="submit" value="送信">
-        </form>
-      </li>
+      <form>
+        <li class="postcode">
+          郵便番号<br>
+          〒<input type="text" id="input" name="zip01" placeholder="例）4101118"
+            onKeyUp="AjaxZip3.zip2addr(this,'','pref21','addr21','strt21');" onclick="check()">
+        </li>
+      </form>
       <li class="province">
         都道府県<br>
-        <input type="text" name="province" placeholder="静岡県">
-        <input type="text" placeholder="シズオカケン">
+        <input type="text" name="pref21" placeholder="静岡県">
       </li>
       <li class="municipality">
         市区町村<br>
-        <input type="text" name="municipality" placeholder="裾野市">
-        <input type="text" placeholder="スソノシ">
+        <input type="text" name="addr21" placeholder="裾野市">
       </li>
       <li class="town">
         町域<br>
-        <input type="text" name="town" placeholder="佐野">
-        <input type="text" placeholder="サノ">
+        <input type="text" name="strt21" placeholder="佐野">
       </li>
     </ul>
   </div>

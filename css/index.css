@@ -14,6 +14,7 @@ body ul {
   padding: 0px;
 }
 body ul li {
+  pointer-events: none;
   list-style: none;
   border: solid 2px blue;
   width: 100%;
