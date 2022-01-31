@@ -18,20 +18,20 @@
         <li class="postcode">
           郵便番号<br>
           〒<input type="text" id="input" name="zip01" placeholder="例）4101118"
-            onKeyUp="AjaxZip3.zip2addr(this,'','pref21','addr21','strt21');" onclick="check()">
+            onKeyUp="AjaxZip3.zip2addr(this,'','pref21','addr21','strt21');">
         </li>
       </form>
       <li class="province">
         都道府県<br>
-        <input type="text" name="pref21" placeholder="静岡県">
+        <input type="text" name="pref21" placeholder="静岡県" style="pointer-events: none;">
       </li>
       <li class="municipality">
         市区町村<br>
-        <input type="text" name="addr21" placeholder="裾野市">
+        <input type="text" name="addr21" placeholder="裾野市" style="pointer-events: none;">
       </li>
       <li class="town">
         町域<br>
-        <input type="text" name="strt21" placeholder="佐野">
+        <input type="text" name="strt21" placeholder="佐野" style="pointer-events: none;">
       </li>
     </ul>
   </div>

@@ -1,2 +1,2 @@
-body{margin-left:auto;margin-right:auto;width:600px;height:300px}body h1{padding:10px;text-align:center;border-top:#7fffd4 solid 1px;border-bottom:#7fffd4 solid 1px}body ul{padding:0px}body ul li{pointer-events:none;list-style:none;border:solid 2px blue;width:100%;margin:20px 0px;box-sizing:border-box;padding:10px}body ul li input{padding:5px;margin-top:5px}
+body{margin-left:auto;margin-right:auto;width:600px;height:300px}body h1{padding:10px;text-align:center;border-top:#7fffd4 solid 1px;border-bottom:#7fffd4 solid 1px}body ul{padding:0px}body ul li{list-style:none;border:solid 2px blue;width:100%;margin:20px 0px;box-sizing:border-box;padding:10px}body ul li input{padding:5px;margin-top:5px}
 /*# sourceMappingURL=index.min.css.map */
